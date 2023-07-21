@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "es2020",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"declaration": false,
+		"noImplicitAny": false,
+		"jsx": "react",
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"noLib": false,
+		"strictNullChecks": false,
+		"strictPropertyInitialization": false,
+		"baseUrl": "./src/",
+		"paths": {
+			"layout": ["layout"],
+			"scenes": ["scenes"],
+			"core": ["core"],
+			"pods": ["pods"],
+			"common": ["common"],
+			"styles": ["scss"]
+		}
+	},
+	"types": ["node", "jest", "@testing-library/jest-dom"],
+	"compileOnSave": false,
+	"exclude": ["node_modules", "cypress"]
+}

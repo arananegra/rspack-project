@@ -1,0 +1,27 @@
+{
+  "name": "rspack-react-ts-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start:rs": "rspack serve --config=./config/webpack/dev.rspack.config.js",
+    "build:pro:rs": "rimraf dist-local && rspack --config=./config/webpack/pro.rspack.config.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "latest",
+    "@rspack/plugin-html": "^0.2.8",
+    "@svgr/webpack": "^8.0.1",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "css-loader": "^6.8.1",
+    "sass": "1.37.5",
+    "sass-loader": "12.1.0",
+    "style-loader": "^3.3.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.88.2",
+    "webpack-merge": "^5.9.0"
+  }
+}

@@ -1,0 +1,50 @@
+@mixin font($color, $size, $weight) {
+	color: $color;
+	font-size: $size;
+	font-weight: $weight;
+}
+$black-color: #333333;
+$fsize-normal: 14px;
+$background-color: #eeeff4;
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	line-height: 1.42857143;
+	@include font($black-color, $fsize-normal, 300);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background: $background-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+
+	a {
+		color: #1675e0;
+	}
+}
+
+@font-face {
+	font-family: 'Roboto, Light';
+	font-style: normal;
+	src: url(../../assets/fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto, Regular';
+	font-style: normal;
+	src: url(../../assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto, Bold';
+	font-style: normal;
+	src: url(../../assets/fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto, Medium';
+	font-style: normal;
+	src: url(../../assets/fonts/Roboto-Medium.ttf) format('truetype');
+}
