@@ -2,13 +2,16 @@
   "name": "rspack-react-ts-starter",
   "private": true,
   "version": "1.0.0",
+  "sideEffects": false,
   "scripts": {
-    "start:rs": "rspack serve --config=./config/webpack/dev.rspack.config.js",
-    "build:pro:rs": "rimraf dist-local && rspack --config=./config/webpack/pro.rspack.config.js"
+    "start": "rspack serve --config=./config/webpack/dev.rspack.config.js",
+    "build:dev": "rimraf dist-dev && rspack --config=./config/webpack/dev.rspack.config.js",
+    "build:pro": "rimraf dist-pro && rspack --config=./config/webpack/pro.rspack.config.js"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-toastify": "7.0.4"
   },
   "devDependencies": {
     "@rspack/cli": "latest",
@@ -17,6 +20,7 @@
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "css-loader": "^6.8.1",
+    "rimraf": "5.0.1",
     "sass": "1.37.5",
     "sass-loader": "12.1.0",
     "style-loader": "^3.3.3",

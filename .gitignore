@@ -23,6 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+dist-dev
+
 node_modules
 .idea
 .vscode
