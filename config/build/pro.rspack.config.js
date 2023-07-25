@@ -8,7 +8,7 @@ const config = defineConfig(
 		mode: 'production',
 		devtool: 'cheap-source-map',
 		output: {
-			path: helpers.resolveFromRootPath('dist-pro'),
+			path: helpers.resolveFromRootPath('dist'),
 			filename: '[name].[chunkhash].js',
 			assetModuleFilename: '[hash][ext][query]'
 		},

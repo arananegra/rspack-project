@@ -7,19 +7,10 @@ const HtmlRspackPlugin = require('@rspack/plugin-html');
 const config = defineConfig({
 	context: helpers.resolveFromRootPath('src'),
 	entry: {
-		styles: ['./scss/index.scss'],
 		app: ['../index.tsx'],
 	},
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
-		alias: {
-			layout: path.resolve(__dirname, '../../src/layout/'),
-			scenes: path.resolve(__dirname, '../../src/scenes/'),
-			core: path.resolve(__dirname, '../../src/core/'),
-			pods: path.resolve(__dirname, '../../src/pods/'),
-			common: path.resolve(__dirname, '../../src/common/'),
-			styles: path.resolve(__dirname, '../../src/scss/'),
-		},
 	},
 	target: 'web',
 
