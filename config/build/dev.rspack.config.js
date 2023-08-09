@@ -5,7 +5,7 @@ const { defineConfig } = require('@rspack/cli');
 
 const config = defineConfig(
 	merge(common, {
-		mode: 'development',
+		mode: 'production',
 		devtool: 'inline-source-map',
 		watchOptions: {
 			ignored: /node_modules/,

@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "rspack serve --config=./config/build/dev.rspack.config.js",
 		"build:dev": "rimraf dist-dev && rspack --config=./config/build/dev.rspack.config.js",
-		"build:pro": "rimraf dist-pro && rspack --config=./config/build/pro.rspack.config.js",
+		"build:pro": "rimraf dist && rspack --config=./config/build/pro.rspack.config.js",
 		"build:perf": "rimraf dist && rspack --config=./config/build/perf.rspack.config.js",
 		"build:pro:webpack": "rimraf dist-pro && webpack --config=./config/build/pro.webpack.config.js",
 		"build:perf:webpack": "rimraf dist && webpack --config=./config/build/perf.webpack.config.js"
