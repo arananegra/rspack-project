@@ -1,9 +1,14 @@
 import React from "react";
-import { DoNotDisturb } from "@mui/icons-material";
+import { Card } from "@mui/material";
+import { Reveal } from "react-genie";
+import { Animation } from 'react-genie-styled-components';
+
 export const App = () => {
-  return (
-    <div>
-      <DoNotDisturb />
-    </div>
-  );
+	return (
+		<div>
+			<Reveal animation={Animation.BounceInLeft}>
+				<Card>Hola soy una card</Card>
+			</Reveal>
+		</div>
+	);
 };
